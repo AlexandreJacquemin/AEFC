@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+
+body {
+    margin: 5px 30px 5px 30px;
+    padding: 0;
+    font-family: Open Sans;
+    background-color: #F6F7F2;
+}
+
+#titre_principal {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #25373D;
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Oswald;
+    letter-spacing: 3px;
+    font-size: 32px;
+    color: #D2D7D3;
+}
+
+nav {
+    width: auto;
+    background-color: #EEEEEE;
+    margin-bottom: 20px;
+}
+
+nav > ul {
+    padding: auto;
+    margin: 0;
+    padding-left: 20px;
+}
+
+nav li {
+    list-style-type: none;
+}
+
+nav li:hover {
+    border-top: 5px solid #BBB;
+}
+
+nav li:hover .submenu {
+    display: inline-block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 0;
+    z-index: 100000;
+}
+
+nav a {
+    display: inline-block;
+    text-decoration: none;
+}
+
+nav > ul > li {
+    float: left;
+    position: relative;
+}
+
+nav > ul > li > a {
+    padding: 10px 20px;
+    color: #22313F;
+}
+
+nav > ul > li:hover a {
+    padding: 5px 20px 10px 20px;
+}
+
+nav > ul::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.submenu {
+    display: none;
+}
+
+.submenu li {
+    border-bottom: 1px solid #CCC;
+    background-color: #EEEEEE;
+}
+
+.submenu li:hover {
+    background-color: #DADFE1;
+}
+
+.submenu li a {
+    padding: 15px 30px;
+    font-size: 13px;
+    color: #34495E;
+    width: 270px;
+}
+
+nav i {
+    color: #002F2F;
+}
+
+.langues > img {
+    width: 40px;
+    height: 27px;
+    opacity: 0.4;
+}
+
+.langues {
+    position: relative;
+    float: right;
+    margin: 8px;
+}
+
+.langues > img:hover {
+    opacity: 1;
+}
+
+.objectif {
+    background-color: #D6DAC2;
+    margin: 0px;
+}
+
+.social ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+}
+
+.social li {
+    list-style-type: none;
+    padding: 20px;
+    text-align: center;
+}
+
+.objectif ul {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: row;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.objectif li, social  {
+    list-style-type: none;
+    width: 400px;
+    height: auto;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+.objectif i {
+    padding-bottom: 10px;
+}
+
+footer {
+    background-color: #25373D;
+    color: #D2D7D3;
+    padding: 2px;
+    padding-left: 25px;
+    text-align: center justify;
+}

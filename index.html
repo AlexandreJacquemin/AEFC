@@ -8,59 +8,129 @@
     <title>Association Ardennais d'Echange Franco-Chinois</title>
     
     <link rel="stylesheet" href="style.css" />
+    
+    <!-- CCS POUR LES ICONS -->
+    <link rel="stylesheet" href="font-awesome.css" />
+
+    <!-- CSS POUR LE SLIDER -->
+    <link rel="stylesheet" href="ism/css/my-slider.css"/>
+    
+    <!-- JS POUR LE SLIDER -->
+    <script src="ism/js/ism-2.2.min.js"></script>
+
 </head>
     
 <body>
-<!-- ///////////////// EN TETE ///////////////// -->
-    <div class="en_tete">
-        <header>
-            <h1>Association Ardennais d'Echange Franco-Chinois</h1>
-        </header>
-
-        <nav>
-            <ul>
-                <li><a href="#" desc="Accueil">Accueil</a></li>
-                <li><a href="../presentation.html" desc="Presentation">Presentation</a></li>
-                <li><a href="../evenements/expositions.html" desc="Expositions">Expositions</a></li>
-                <li><a href="../evenements/activites.html" desc="Activités">Activités</a></li>
-                <li><a href="../cuisine/recettes.html" desc="Recettes">Recettes</a></li>
-                <li><a href="../cuisine/menus.html" desc="Menus">Menus</a></li>
-                <li><a href="../thes.html" desc="Thés">Thés</a></li>
-                <li><a href="../culture/calligraphie.html" desc="Calligraphie">Calligraphie</a></li>
-                <li><a href="../culture/instrument.html" desc="Instrument">Instrument</a></li>
-                <li><a href="../culture/langue.html" desc="Langue">Langue</a></li>
-                <li><a href="../culture/musique.html" desc="Musique">Musique</a></li>
-                <li><a href="../culture/serie_film.html" desc="Série et film">Série et film</a></li>
-                <li>Voyages</li>
-                <li>Shopping</li>
-                <li>Plus...</li>
-            </ul>
-        </nav>
-    </div>
-<!-- ///////////////// CONTENU ///////////////// -->
-    <article>
-        <img src="../img/index/photo_1.jpg" desc="Photo" />
-        <img src="../img/index/photo_2.jpg" desc="Photo" />
-        <img src="../img/index/photo_3.jpg" desc="Photo" />
-        <img src="../img/index/photo_4.jpg" desc="Photo" />
-        <img src="../img/index/photo_5.jpg" desc="Photo" />
-        <img src="../img/index/photo_6.jpg" desc="Photo" />
-        <img src="../img/index/photo_7.jpg" desc="Photo" />
-        <img src="../img/index/photo_8.jpg" desc="Photo" />
-        <img src="../img/index/photo_9.jpg" desc="Photo" />
-        <img src="../img/index/photo_10.jpg" desc="Photo" />
-
-        <h3>Objet de l’association: Développer</h3>
+    
+    <h1 id="titre_principal">Association Ardennaise d'Echange Franco-Chinois</h1>
+    <nav>
         <ul>
-            <li>l’amitié franco-chinoise</li>
-            <li>les échanges culturels entre ressortissants français et chinois</li>
-            <li>favoriser l’accès à l’enseignement des langues des deux pays</li>
-            <li>favoriser l’information sur les connaissances, historiques, philosophiques et géographiques</li>
+            <li><i class="fa fa-home" aria-hidden="true"></i><a href="index.html" desc="Accueil">Accueil</a></li>
+            <li><i class="fa fa-info-circle" aria-hidden="true"></i><a href="presentation.html">Presentation</a></li>
+            <li><i class="fa fa-users" aria-hidden="true"></i><a href="#" desc="Evenement">Evénement</a>
+                <ul class="submenu">
+                    <li><a href="evenement_expositions.html" desc="Expositions">Expositions</a></li>
+                    <li><a href="evenement_activites.html" desc="Activités">Activités</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-cutlery" aria-hidden="true"></i><a href="#" desc="Cuisine">Cuisine</a>
+                <ul class="submenu">
+                    <li><a href="cuisine_recettes.html" desc="Recettes">Recettes</a></li>
+                    <li><a href="cuisine_menus.html" desc="Menus">Menus</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-coffee" aria-hidden="true"></i><a href="#" desc="Thés">Thés</a>
+                <ul class="submenu">
+                    <li><a href="thes_presentation.html" desc="Présentation Thés">Thés</a></li>
+                    <li><a href="thes_ceremonie.html" desc="Cérémonie du thé">Cérémonie du thé</a></li>
+                    <li><a href="thes_sante.html" desc="Santé et bien-être">Santé et bien-être</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-language" aria-hidden="true"></i><a href="#" desc="Culture">Culture</a>
+                <ul class="submenu">
+                    <li><a href="culture_calligraphie.html" desc="Calligraphie">Calligraphie</a></li>
+                    <li><a href="culture_instruments.html" desc="Instrument">Instrument</a></li>
+                    <li><a href="culture_langue.html" desc="Langue">Langue</a></li>
+                    <li><a href="culture_musique.html" desc="Musique">Musique</a></li>
+                    <li><a href="culture_serie_film.html" desc="Série et film">Série et film</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-plane" aria-hidden="true"></i><a href="#" desc="Voyages">Voyages</a>
+                <ul class="submenu">
+                    <li><a href="voyages_reportages.html" desc="Reportages">Reportages</a></li>
+                    <li><a href="voyages_programmes.html" desc="Programmes">Programmes</a></li>
+                </ul>
+            </li>
+            <li><i class="fa fa-shopping-basket" aria-hidden="true"></i><a href="shopping.html" desc="Shopping">Shopping</a></li>
+            <li><i class="fa fa-star" aria-hidden="true"></i><a href="adhesion.html" desc="Adhésion">Adhésion</a></li>
+            <li><i class="fa fa-paper-plane" aria-hidden="true"></i><a href="contact.html" desc="Contact">Contact</a></li>
         </ul>
+        <div class="langues">
+            <img src="img/flag/China.png" />
+            <img src="img/flag/France.png" />
+            <img src="img/flag/United-Kingdom.png" />
+        </div>
+    </nav>
+
+    <article>
+        
+        <div class="social">
+            <ul>
+                <li><i class="fa fa-facebook  fa-5x"></i></li>
+                <li><i class="fa fa-twitter  fa-5x"></i></li>
+                <li><i class="fa fa-youtube  fa-5x"></i></li>
+            </ul>
+        </div>
+        
+        <!-- DIAPORAMA D'IMAGES -->
+        <div class="ism-slider" data-play_type="loop" data-interval="10000" data-radio_type="thumbnail" id="slider">
+          <ol>
+            <li>
+              <img src="ism/image/slides/_u/1477634351497_230149.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634351292_129623.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634351166_939541.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634350753_487083.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634350536_420851.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634350306_785515.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634349994_891804.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634349719_78855.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634349305_815680.jpg">
+            </li>
+            <li>
+              <img src="ism/image/slides/_u/1477634349206_516236.jpg">
+            </li>
+          </ol>
+        </div>
+    
+        <div class="objectif">
+            <ul>
+                <li><i class="fa fa-handshake-o  fa-5x"></i><br />l’amitié franco-chinoise</li>
+                <li><i class="fa fa-comments-o  fa-5x"></i><br />les échanges culturels entre ressortissants français et chinois</li>
+                <li><i class="fa fa-language  fa-5x"></i><br />favoriser l’accès à l’enseignement des langues des deux pays</li>
+                <li><i class="fa fa-graduation-cap  fa-5x"></i><br />favoriser l’information sur les connaissances, historiques, philosophiques et géographiques</li>
+            </ul>
+        </div>
     </article>
-<!-- ///////////////// BAS DE PAGE ///////////////// -->
+
     <footer>
-        <p>L’association ardennaise d’échanges franco-chinois (N° W083000965) est une association régie par la loi du 1er juillet 1901. Elle est situé au N°15 Boulevard Delattre de Tassigny, 08200 Sedan.</p>
+        <p>L’association ardennaise d’échanges franco-chinois (N° W083000965) est une association régie par la loi du 1er juillet 1901. <br />Elle est situé au N°15 Boulevard Delattre de Tassigny, 08200 Sedan.</p>
     </footer>
 </body>
+
 </html>

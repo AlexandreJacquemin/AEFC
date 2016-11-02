@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans');
 @import url('https://fonts.googleapis.com/css?family=Oswald');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:700');
 
 body {
     margin: 5px 30px 5px 30px;
@@ -8,29 +9,56 @@ body {
     background-color: #F6F7F2;
 }
 
-#titre_principal {
+h4 {
+    margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	font-family: inherit;
+	vertical-align: baseline;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
     text-transform: uppercase;
     text-align: center;
-    background-color: #25373D;
-    margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    font-family: Oswald;
+}
+
+.title_header { 
+    text-transform: uppercase;
+    text-align: center;
+    padding: 30px 0px 20px 0px;
     letter-spacing: 3px;
+    background-position: 50% 60%;
+    background-repeat:no-repeat;
+}
+
+#titre_principal {
+    font-family: Oswald;
     font-size: 32px;
-    color: #D2D7D3;
+    color: #222;
+}
+
+#soustitre_principal {
+    font-size: 22px;
+    color: #111;
+    font-family: "Microsoft YaHei";
 }
 
 nav {
     width: auto;
     background-color: #EEEEEE;
     margin-bottom: 20px;
+
 }
 
 nav > ul {
     padding: auto;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 15px;
 }
 
 nav li {
@@ -63,6 +91,11 @@ nav > ul > li {
 nav > ul > li > a {
     padding: 10px 20px;
     color: #22313F;
+}
+
+nav > ul > li > h4 {
+    padding: 10px 20px;
+    margin: 0;
 }
 
 nav > ul > li:hover a {
@@ -99,64 +132,112 @@ nav i {
     color: #002F2F;
 }
 
-.langues > img {
-    width: 40px;
-    height: 27px;
-    opacity: 0.4;
-}
-
-.langues {
-    position: relative;
-    float: right;
-    margin: 8px;
-}
-
-.langues > img:hover {
-    opacity: 1;
-}
-
-.objectif {
-    background-color: #D6DAC2;
-    margin: 0px;
-}
-
-.social ul {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-}
-
-.social li {
-    list-style-type: none;
-    padding: 20px;
-    text-align: center;
-}
-
-.objectif ul {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: row;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.objectif li, social  {
-    list-style-type: none;
-    width: 400px;
-    height: auto;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: 14px;
-}
-
-.objectif i {
-    padding-bottom: 10px;
+article {
+    border: 1px solid #25373D;
+    margin-bottom: 20px; 
+    padding: 15px 30px 15px 30px;
 }
 
 footer {
     background-color: #25373D;
     color: #D2D7D3;
+    text-align: center justify;
+    display: flex;
+}
+
+footer p {
     padding: 2px;
     padding-left: 25px;
-    text-align: center justify;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: row;
+}
+
+footer li {
+    list-style-type: none;
+    padding-left: 15px;
+}
+
+.recettes_box {
+    border: 1px solid #555;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding: 5%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recettes_box:hover {
+    box-shadow: 1px 1px 13px #555; 
+    text-shadow: 1px 1px 13px #555;
+    cursor: pointer;
+}
+
+.recettes_box a {
+    text-decoration: none;
+    font-size: 36px;
+    font-style: italic;
+    color: #FFF;
+}
+
+#slidy-container { 
+  width: 60%; overflow: hidden; margin: 0 auto;
+}
+
+#carte {
+    width: 30%;
+    height: auto;
+}
+
+.menu {
+    position: relative;
+    background: #25373D;
+    margin: 0;
+    height: auto;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    color: #D2D7D3;
+}
+
+.menu > h2 {
+    padding: 20px 0px 20px 0px;
+}
+
+.contenu {
+    background: #D2D7D3;
+    padding: 0px 15px;
+    margin: 5px 0;
+    height: 0;
+    overflow: hidden;
+    z-index: -1;
+    position: relative;
+    opacity: 0;
+    transition: .4s ease;
+}
+
+.menus:checked ~ .contenu{
+    height: auto;
+    opacity: 1;
+    padding: 15px;
+}
+
+.menus {
+    display: none;
+}
+
+article > strong {
+    text-align: center;
+}
+
+video {
+    width: 100%;
+    height: auto;
+}
+
+#dl {
+    text-decoration: none;
+    font-size: 65px;
 }

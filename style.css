@@ -5,7 +5,7 @@
 body {
     margin: 5px 30px 5px 30px;
     padding: 0;
-    font-family: Open Sans;
+    font-family: "Microsoft YaHei";
     background-color: #F6F7F2;
 }
 
@@ -37,7 +37,7 @@ h2 {
 }
 
 #titre_principal {
-    font-family: Oswald;
+    font-family: Oswald, "Microsoft YaHei";
     font-size: 32px;
     color: #222;
 }
@@ -233,11 +233,16 @@ article > strong {
 }
 
 video {
-    width: 100%;
+    width: 75%;
     height: auto;
 }
 
 #dl {
     text-decoration: none;
-    font-size: 65px;
+    font-size: 45px;
+    padding-bottom: 30px;
+}
+
+audio {
+    padding: 30px 0px 30px 0    px;
 }
